@@ -1,10 +1,4 @@
-.profile-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 10px auto;
-}
+/* styles.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -55,18 +49,46 @@ footer {
     bottom: 0;
 }
 
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Specific font styles */
 h1 {
-    font-family: 'Serif', serif;
+    font-family: 'Georgia', serif;
 }
 
 h2 {
-    font-family: 'Cursive', sans-serif;
-}
-
-h3 {
-    font-family: 'Candara', serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 p {
     font-family: 'Times New Roman', serif;
 }
+
