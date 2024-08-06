@@ -1,3 +1,11 @@
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
