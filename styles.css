@@ -1,6 +1,6 @@
 body {
     font-family: 'Times New Roman', serif;
-    font-size: 20px; /* Slightly increase base font size */
+    font-size: 18px; /* Slightly increase base font size */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -14,7 +14,7 @@ header {
     color: #fff;
     padding: 15px 0; /* Increase padding slightly to adjust for larger text */
     text-align: center;
-    font-size: 1.5em; /* Increase header text size */
+    font-size: 1.2em; /* Increase header text size */
 }
 
 .container {
@@ -24,7 +24,7 @@ header {
 
 .section {
     margin-bottom: 20px;
-    font-size: 1.5em; /* Slightly increase font size in sections */
+    font-size: 1.3em; /* Slightly increase font size in sections */
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
 
 h2 {
     font-family: 'Verdana', sans-serif;
-    font-size: 2.8em; /* Increase h2 size */
+    font-size: 2.0em; /* Increase h2 size */
 }
 
 .about-section {
