@@ -35,6 +35,22 @@ h2 {
     align-items: center;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts the spacing between the sections */
+    gap: 20px; /* Adds space between the sections */
+}
+
+.section {
+    flex: 1; /* Allows the sections to take equal space */
+    margin-bottom: 20px; /* Adjusts space below the sections */
+}
+
+/* If you want to ensure that the sections don't shrink too much */
+#background, #research {
+    flex: 1 1 0;
+}
+
 .profile-image {
     width: 150px;
     height: 150px;
