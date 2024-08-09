@@ -1,8 +1,11 @@
 body {
-    font-family: 'Times New Roman', serif; /* Set Times New Roman as the base font */
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -13,14 +16,14 @@ header {
 }
 
 .container {
+    flex: 1;
     padding: 20px;
 }
 
 .section {
-    margin-bottom: 20px; /* Adjust this value to change the spacing between sections */
+    margin-bottom: 20px;
 }
 
-/* Specific font styles for headers */
 h1 {
     font-family: 'Georgia', serif;
 }
@@ -37,16 +40,15 @@ h2 {
 
 .flex-container {
     display: flex;
-    justify-content: space-between; /* Adjusts the spacing between the sections */
-    gap: 20px; /* Adds space between the sections */
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .section {
-    flex: 1; /* Allows the sections to take equal space */
-    margin-bottom: 20px; /* Adjusts space below the sections */
+    flex: 1;
+    margin-bottom: 20px;
 }
 
-/* If you want to ensure that the sections don't shrink too much */
 #background, #research {
     flex: 1 1 0;
 }
@@ -63,16 +65,6 @@ h2 {
     flex: 1;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
 /* Media query for small screens */
 @media (max-width: 600px) {
     .about-section {
@@ -84,9 +76,9 @@ footer {
         margin-right: 0;
         margin-bottom: 20px;
     }
-}
-@media (max-width: 600px) {
+
     .flex-container {
         flex-direction: column;
     }
 }
+
