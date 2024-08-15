@@ -94,7 +94,7 @@ h2 {
 
 /* Image styling to fit within their containers */
 .image-row img {
-    width: 50%; /* Width for 3 images in the first row */
+    width: 33%; /* Width for 3 images in the first row */
     height: auto;
     margin: 0 5px; /* Small margin between images */
     border-radius: 5px;
