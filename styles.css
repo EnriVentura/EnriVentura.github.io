@@ -88,16 +88,24 @@ h2 {
 }
 .image-row {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: center; /* Center the images within each row */
+    margin-top: 10px; /* Space between rows */
 }
 
+/* Image styling to fit within their containers */
 .image-row img {
-    width: 18%;
+    width: 30%; /* Width for 3 images in the first row */
     height: auto;
+    margin: 0 5px; /* Small margin between images */
     border-radius: 5px;
 }
 
+/* Adjust width for the second row to accommodate 2 images */
+.image-row:nth-child(2) img {
+    width: 45%; /* Width for 2 images in the second row */
+}
+
+/* Responsive design for smaller screens */
 @media (max-width: 600px) {
     .image-row {
         flex-direction: column;
@@ -105,7 +113,7 @@ h2 {
     }
 
     .image-row img {
-        width: 80%;
+        width: 80%; /* Full width on small screens */
         margin-bottom: 10px;
     }
 }
