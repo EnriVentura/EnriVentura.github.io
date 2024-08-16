@@ -3,14 +3,14 @@ body {
     font-size: 17px; /* Slightly increase base font size */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;/*#f4f4f4;*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background: #333;
+    background: #e09c85;/*#333;*/
     color: #fff;
     padding: 15px 0; /* Increase padding slightly to adjust for larger text */
     text-align: center;
