@@ -160,7 +160,7 @@ li {
     margin: 6px 0;
 }
 
-/* -------------------- Projects layout (NEW/UPDATED) -------------------- */
+/* -------------------- Projects layout -------------------- */
 .projects-list{
     list-style: none;
     padding: 0;
@@ -186,16 +186,16 @@ li {
     min-width: 0;
 }
 
-/* Right column: make it smaller */
+/* Right column: increased image size */
 .project-image{
-    flex: 0 0 200px;     /* <-- reduce this value to shrink images */
-    max-width: 200px;
-    min-width: 200px;
+    flex: 0 0 280px;
+    max-width: 280px;
+    min-width: 280px;
     display: flex;
     justify-content: flex-end;
 }
 
-/* Image scales to the (smaller) column */
+/* Image scales to the column */
 .project-image img{
     width: 100%;
     height: auto;
@@ -204,9 +204,9 @@ li {
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(17, 24, 39, 0.10);
 }
-/* ---------------------------------------------------------------------- */
+/* --------------------------------------------------------- */
 
-/* Image rows (kept, lightly refined) */
+/* Image rows (Gender section) */
 .image-row {
     display: flex;
     justify-content: center;
@@ -238,7 +238,7 @@ li {
         flex-direction: column;
     }
     .project-image{
-        max-width: 260px;
+        max-width: 360px;
         min-width: 0;
         width: 100%;
         justify-content: flex-start;
@@ -263,6 +263,11 @@ li {
         flex-direction: column;
         align-items: center;
     }
+
+    .image-row img {
+        width: 86%;
+    }
+}
 
     .image-row img {
         width: 86%;
