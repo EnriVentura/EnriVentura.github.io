@@ -47,6 +47,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    align-items: flex-start; /* keep tops aligned */
 }
 
 .section {
@@ -54,9 +55,17 @@ h2 {
     margin-bottom: 20px;
 }
 
-#background, #research {
-    flex: 1 1 0;
+/* --- UPDATED: give more space to Academic Background, less to Research Interests --- */
+#background {
+    flex: 3 1 0;   /* wider column */
+    min-width: 0;  /* prevents overflow in flex layouts */
 }
+
+#research {
+    flex: 1 1 0;   /* narrower column */
+    min-width: 0;
+}
+/* ------------------------------------------------------------------------------- */
 
 .profile-image {
     width: 200px;
@@ -86,6 +95,7 @@ h2 {
         flex-direction: column;
     }
 }
+
 .image-row {
     display: flex;
     justify-content: center; /* Center the images within each row */
@@ -117,4 +127,3 @@ h2 {
         margin-bottom: 10px;
     }
 }
-
