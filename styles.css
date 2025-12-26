@@ -188,9 +188,9 @@ li {
 
 /* Right column: make it smaller */
 .project-image{
-    flex: 0 0 160px;     /* <-- reduce this value to shrink images */
-    max-width: 160px;
-    min-width: 160px;
+    flex: 0 0 200px;     /* <-- reduce this value to shrink images */
+    max-width: 200px;
+    min-width: 200px;
     display: flex;
     justify-content: flex-end;
 }
