@@ -160,6 +160,52 @@ li {
     margin: 6px 0;
 }
 
+/* -------------------- Projects layout (NEW/UPDATED) -------------------- */
+.projects-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-item{
+    margin: 0 0 26px 0;
+    padding: 0;
+}
+
+/* Each text+image row */
+.project-row{
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    margin-top: 12px;
+}
+
+/* Text takes remaining space */
+.project-text{
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+/* Right column: make it smaller */
+.project-image{
+    flex: 0 0 160px;     /* <-- reduce this value to shrink images */
+    max-width: 160px;
+    min-width: 160px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Image scales to the (smaller) column */
+.project-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.10);
+}
+/* ---------------------------------------------------------------------- */
+
 /* Image rows (kept, lightly refined) */
 .image-row {
     display: flex;
@@ -185,6 +231,20 @@ li {
 @media (max-width: 768px) {
     .flex-container {
         flex-direction: column;
+    }
+
+    /* Projects: stack image below text on tablets/phones */
+    .project-row{
+        flex-direction: column;
+    }
+    .project-image{
+        max-width: 260px;
+        min-width: 0;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .project-image img{
+        width: 100%;
     }
 }
 
