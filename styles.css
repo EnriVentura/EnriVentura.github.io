@@ -116,8 +116,8 @@ li {
 }
 
 .profile-image {
-    width: 180px;
-    height: 180px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     flex-shrink: 0;
     object-fit: cover;
