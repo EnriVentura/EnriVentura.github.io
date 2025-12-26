@@ -17,13 +17,26 @@
         <section id="about" class="section about-section">
             <img src="profile.jpeg" alt="Enrico Ventura" class="profile-image">
             <div class="about-text">
-                <h2>Ciao :)</h2>
-                <p>I'm a PostDoc at Bocconi Institute of Data Science and Analytics (BIDSA) in Milan, Italy. My research investigates the Statistical Mechanics of Disordered Systems and its multidisciplinary applications.</p>
-                <p>At the moment I'm interested in finding new learning paradigms at the interface between Artificial Intelligence and Biology.</p>
+                <h2>Ciao!</h2>
+                <p>I'm a researcher at Bocconi Institute of Data Science and Analytics (BIDSA) in Milan, Italy. My research investigates the Statistical Mechanics of Disordered Systems and its multidisciplinary applications.</p>
+                <p>I am mainly interested in the emergent properties of learning systems, such as memorization and generalization in neural networks and generative models.</p>
             </div>
         </section>
         <div class="container">
             <div class="flex-container">
+
+                <!-- Swapped order: Research Interests first -->
+                <section id="research" class="section">
+                    <h2>Research Interests</h2>
+                    <ul>
+                        <li>Statistical Mechanics</li>
+                        <li>Inference and Networks</li>
+                        <li>Algorithms</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Complex Systems</li>
+                    </ul>
+                </section>
+
                 <section id="background" class="section">
                     <h2>Academic Background (full CV <a href="https://drive.google.com/file/d/1zzAEgJ2P4Y-Qurwf-3jA0G6quJhMZLkS/view?usp=sharing">here</a>)</h2>
                     <ul>
@@ -38,41 +51,75 @@
                         <li>2015 - 2018: B.Sc. in Physics, La Sapienza.</li>
                     </ul>
                 </section>    
-                <section id="research" class="section">
-                    <h2>Research Interests</h2>
-                    <ul>
-                        <li>Statistical Mechanics</li>
-                        <li>Inference and Networks</li>
-                        <li>Algorithms</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Complex Systems</li>
-                    </ul>
-                </section>
+
             </div>
         </div>
         <section id="projects" class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Glassy Physics of Diffusion Models</h3>
-                    <p>Diffusion models represent the state of the art in image and video generation. These models learn the distribution of the data through a diffusive trajectory in the data-space, the same type of dynamical processes studied by stochastic thermodynamics. 
+    <h2>Projects</h2>
+    <ul class="projects-list">
+
+        <!-- Main paragraph 1 -->
+        <li class="project-item">
+            <h3>Generative Diffusion</h3>
+
+            <!-- Subparagraph 2 (with image placeholder on the right) -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h4>Memorization and Generalization in Generative Diffusion</h4>
+                    <p>
+                        Diffusion models represent the state of the art in image and video generation. These models learn the distribution of the data through a diffusive trajectory in the data-space, the same type of dynamical processes studied by stochastic thermodynamics. 
                         Statistical mechanics has recently helped at providing for crucial insights about the complex dynamics with which such models learn the data distribution.  
                         We are now studying the learning dynamics in case of stractured training data, i.e. data-points that live on a low dimensional manifold.    
                         We are exploiting Random Matrix Theory and the physics of Random Energy Models to answer the following questions:
-                         <ul>
-                            <li> Does the structure of the data help reducing overfitting and improving generalization? </li>
-                            <li> Can we infer the way the model is learning the data-structure by looking at the geometry of the diffusive trajectory? </li>
-                         </ul>
                     </p>
-                </li>
-                <li>
-                    <h3> Learning & Unlearning in Recurrent Networks</h3>
-                    <p> The human brain is a complex system that is fascinating scientists since a long time. Its remarkable capabilities include classification of concepts, retrieval of memories and creative generation of new examples. At the same time, modern artificial neural networks are trained on large amounts of data to accomplish the same type of tasks with a considerable degree of precision.
-By contrast with biological systems, machines appear to be either significantly slow and energetically expensive to train, suggesting the need for a paradigmatic change in statistical learning. 
-We evaluate a known training procedure for recurrent neural networks that can be split into a prior Hebbian learning phase (Learning) and a subsequent anti-Hebbian one (Unlearning). We are progressively proving that this unsupervised prescription is capable of performing classification, memorization and generation of examples with a high degree of efficacy while aligning with some modern biological theories of learning. </p>
-                </li>
-            </ul>
-        </section>    
+                    <ul>
+                        <li> Does the structure of the data help reducing overfitting and improving generalization? </li>
+                        <li> Can we infer the way the model is learning the data-structure by looking at the geometry of the diffusive trajectory? </li>
+                    </ul>
+                </div>
+
+                <!-- IMAGE PLACEHOLDER (right side) -->
+                <div class="project-image">
+                    <img src="" alt="Memorization and Generalization in Generative Diffusion image" />
+                </div>
+            </div>
+            <!-- Subparagraph 1 (with image placeholder on the right) -->
+            <div class="project-row">
+                <div class="project-text">
+                    <h4>Physics of Classifier-Free Guided Diffusion</h4>
+                    <p></p>
+                </div>
+
+                <!-- IMAGE PLACEHOLDER (right side) -->
+                <div class="project-image">
+                    <img src="" alt="Classifier-Free Guidance image" />
+                </div>
+            </div>
+        </li>
+
+        <!-- Main paragraph 2 -->
+        <li class="project-item">
+            <div class="project-row">
+                <div class="project-text">
+                    <h3>Biologically-inspired Neural Networks</h3>
+                    <p>
+                        The human brain is a complex system that is fascinating scientists since a long time. Its remarkable capabilities include classification of concepts, retrieval of memories and creative generation of new examples. At the same time, modern artificial neural networks are trained on large amounts of data to accomplish the same type of tasks with a considerable degree of precision.
+                        By contrast with biological systems, machines appear to be either significantly slow and energetically expensive to train, suggesting the need for a paradigmatic change in statistical learning. 
+                        We evaluate a known training procedure for recurrent neural networks that can be split into a prior Hebbian learning phase (Learning) and a subsequent anti-Hebbian one (Unlearning). We are progressively proving that this unsupervised prescription is capable of performing classification, memorization and generation of examples with a high degree of efficacy while aligning with some modern biological theories of learning.
+                    </p>
+                </div>
+
+                <!-- IMAGE PLACEHOLDER (right side) -->
+                <div class="project-image">
+                    <img src="" alt="Biologically-inspired Neural Networks image" />
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</section>
+
+   
         <section id="publications" class="section">
             <h2>Publications (<a href="https://scholar.google.com/citations?hl=it&user=h2YpRNUAAAAJ">scholar</a>)</h2>
             <ul>
