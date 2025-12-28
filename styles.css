@@ -220,7 +220,7 @@ li {
 
 /* Default (row with 3 images): make each image smaller */
 .image-row img {
-    width: 26%;           /* reduced from 33% */
+    width: 30%;           /* reduced from 33% */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(17, 24, 39, 0.10);
@@ -228,7 +228,7 @@ li {
 
 /* Row with 2 images: also reduce */
 .image-row:nth-child(2) img {
-    width: 42%;           /* reduced from 70% */
+    width: 52%;           /* reduced from 70% */
 }
 /* ------------------------------------------------------------------------ */
 
