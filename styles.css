@@ -188,9 +188,9 @@ li {
 
 /* Right column: increased image size */
 .project-image{
-    flex: 0 0 300px;
-    max-width: 300px;
-    min-width: 300px;
+    flex: 0 0 400px;
+    max-width: 400px;
+    min-width: 400px;
     display: flex;
     justify-content: flex-end;
 }
